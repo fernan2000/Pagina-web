@@ -1,67 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practica con becalos</title>
+    <title>Cafetería Yoongi - Deliciosos Muffins y Pasteles</title>
 </head>
 <body>
-    las etiquetas meta van dentro de body
-    <h1>Devf.com</h1>
-    <p>Bienvenidos a Devf</p>
-    <p stayle="color: blue; font-size: 20px;">
-        Aprendiendo HTML</p>
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ol>
-    <li>
-        Item de lista suelto
-    </li>
-    <ul>
-        <li><a href="index.html">inicio</a></li>
-        <li><a href="contacto.html">contacto</a></li>
-        <li><a href="nosotros">promociones</a></li>
-    </ul>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE3c9zWiRU_UYRC7cKcc23TS5O-3XEFliT-w&s" alt="seugmmin">
-    <p></p>
-    <a href="https://devf.mx">Ir a Devf</a>
-    <header><!---esta es una etiqueta semantica de cabezera-->
-        <h2>Este es el encabezado de la pagina</h2>
+    <!-- Cabecera de la página -->
+    <header>
+        <h1>Cafetería Yoongi</h1>
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Contacto</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+            </ul>
         </nav>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE3c9zWiRU_UYRC7cKcc23TS5O-3XEFliT-w&s" alt="Logo Cafetería Yoongi" width="200">
     </header>
 
-    <!---comentario: esto no se ve en el navegador-->
+    <!-- Contenido principal -->
     <main>
-        <!---esta es una etiqueta semantica de contenido principal-->
-        <h2>Contenido Principal</h2>
-        <!-----seccion sobre nosotros-->
+        <!-- Sección de bienvenida -->
         <section>
+            <h2>Bienvenidos a Cafetería Yoongi</h2>
+            <p>Somos una empresa dedicada a la venta de muffins y pasteles deliciosos.</p>
+        </section>
+
+        <!-- Sección de promociones -->
+        <section>
+            <h2>Promociones Especiales</h2>
+            <ul>
+                <li><strong>2×1</strong> en productos Yoongi los lunes y viernes</li>
+                <li><strong>Combo Super Yoongi:</strong> Café + Pan por solo $55</li>
+                <li><strong>10% de descuento</strong> en pasteles con temática de Yoongi</li>
+            </ul>
+        </section>
+
+        <!-- Sección del menú -->
+        <section>
+            <h2>Nuestro Menú</h2>
             <article>
-                <h3>Sobre Nosotros</h3>
-                <p>Somos una empresa dedicada a la venta de muffins y pasteles deliciosos.</p>
+                <h3>Pay de Limón</h3>
+                <img src="https://i.pinimg.com/1200x/0e/c9/41/0ec9411bebad8e807b2ab6bc9f0417de.jpg" alt="Pay de limón" width="200">
+                <p>Delicioso pay de limón con base de galleta y crema de limón.</p>
+                <p><strong>Precio: $200</strong></p>
+                <button>Agregar al carrito</button>
             </article>
         </section>
-        <!---seccion promoniones-->
+
+        <!-- Sección de recetas -->
         <section>
-            <h3>promociones 2</h3>
-            <p>tenemos promociones este diaa de hoy</p>
-        </section>
-        <!---seccion menu-->
-        <section>
-            <h3>menu</h3>
-            <p>te mostramos nuestro pequeño menu</p>
-        </section>
-        <!---seccion contacto-->
-        <section>
-            <h3>Receta de pastel de zanahoria </h3>
+            <h2>Receta del Mes: Pastel de Zanahoria</h2>
             <p>Aquí tienes una receta sencilla para preparar un delicioso pastel de zanahoria:</p>
-            <h4>Ingredientes:</h4>
+            
+            <h3>Ingredientes:</h3>
             <ol>
                 <li>2 tazas de harina</li>
                 <li>2 tazas de azúcar</li>
@@ -74,18 +68,54 @@
                 <li>1 taza de nueces picadas (opcional)</li>
                 <li>1 taza de piña triturada (opcional)</li>
             </ol>
-
         </section>
+        <!-- Formulario de contacto -->
+        <form action="">
+            <label for="">nombre completo:</label>
+            <input type="text" placeholder="aqui va tu nombre">
+
+            <label for="">celular</label>
+            <input type="number" placeholder="aqui va tu numero">
+
+            <label for="">sabor de pastel:</label>
+            <option value="">selecciona un sabor</option>
+            <div>
+                <label for=""><input type="radio">chocolate</label>
+                <label for=""><input type="radio">vainilla</label>
+                <label for=""><input type="radio">fresa</label>
+                <label for=""><input type="radio">zanahoria</label>
+            </div>
+            <label for="">Extras:</label>
+            <div>
+                <label for=""><input type="checkbox">chispas de chocolate</label>
+                <label for=""><input type="checkbox">nueces</label>
+                <label for=""><input type="checkbox">coco rallado</label>
+                <label for=""><input type="checkbox">frutas secas</label>
+            </div>
+            <label for="">Fecha del evento:</label>
+            <input type="date" name="" id="">
+            <label for="">imagen de referencia</label>
+            <input type="file" name="" id="">
+            <button type="submit">enviar</button>
+            
+        </form>
     </main>
+
+    <!-- Pie de página -->
     <footer>
-        <ul>
-        <!---esta es una etiqueta semantica de pie de pagina-->
-        <li><a href=""></a>facebook</li>
-        <li><a href=""></a>instagram</li>
-        <li><a href=""></a>whatsaap</li>
-        </ul>
-        <p>Derechos reservados muffin 2024</p>
+        <section>
+            <h3>Contacto</h3>
+            <p>Visítanos en nuestras redes sociales:</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">WhatsApp</a></li>
+                <li><a href="https://i.pinimg.com/1200x/eb/fa/56/ebfa569b45d5857d0360c5ca5e71c9c2.jpg" target="_blank">Pinterest</a></li>
+            </ul>
+        </section>
+        
+        <p><strong>Derechos reservados Muffin 2024. CAFETERÍA YOONGI</strong></p>
+        <p><a href="https://devf.mx">Ir a Devf</a></p>
     </footer>
 </body>
 </html>
-
